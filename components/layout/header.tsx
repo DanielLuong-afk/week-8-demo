@@ -5,7 +5,7 @@ import {
   NavigationMenuList,
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
- 
+
 export function Header() {
   return (
     <header className="border-b">
@@ -13,25 +13,19 @@ export function Header() {
         <Link href="/" className="font-bold">
           MyApp
         </Link>
- 
+
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link href="/">Home</Link>
-              </NavigationMenuLink>
+              <NavigationMenuLink render={<Link href="/">Home</Link>} />
             </NavigationMenuItem>
- 
+
             <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link href="/login">Login</Link>
-              </NavigationMenuLink>
+              <NavigationMenuLink render={<Link href="/login">Login</Link>} />
             </NavigationMenuItem>
- 
+
             <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link href="/signup">Sign up</Link>
-              </NavigationMenuLink>
+              <NavigationMenuLink render={<Link href="/signup">Sign up</Link>} />
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>

@@ -8,7 +8,7 @@ import {
 export default function FAQPage() {
   return (
     <div className="max-w-xl mx-auto py-10">
-      <Accordion type="single" collapsible>
+      <Accordion>
         <AccordionItem value="item-1">
           <AccordionTrigger>What is this?</AccordionTrigger>
           <AccordionContent>This is a shadcn accordion.</AccordionContent>
